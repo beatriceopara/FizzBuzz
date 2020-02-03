@@ -9,7 +9,11 @@ namespace FizzBuzz
             for (int i = 1; i <= 105; i++)
             {
                 
-                if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0)
+                if (i % 11 == 0)
+                {
+                    Console.WriteLine("Bong");
+                }
+                else if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0)
                 {
                     Console.WriteLine("FizzBuzzBang");
                 }
@@ -25,6 +29,7 @@ namespace FizzBuzz
                 {
                     Console.WriteLine("BuzzBang");
                 }
+                
                 else if (i % 3 == 0)
                 {
                     Console.WriteLine("Fizz");
